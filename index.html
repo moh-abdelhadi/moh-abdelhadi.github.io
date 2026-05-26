@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammad Abdelhadi | Personal Website</title>
+    <style>
+        /* Import Computer Modern Serif (Normal and Bold) */
+        @font-face {
+            font-family: 'Computer Modern';
+            src: url('https://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunrm.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Computer Modern';
+            src: url('https://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunbx.otf') format('opentype');
+            font-weight: bold;
+            font-style: normal;
+        }
+
+        /* General Body Styling */
+        body {
+            background-color: black;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;       /* Centers vertically */
+            justify-content: flex-end; /* Aligns to the right */
+            padding-right: 10vw;       /* Adds a 10% gap from the right edge */
+            font-family: 'Computer Modern', 'CMU Serif', 'Times New Roman', serif;
+        }
+
+        /* Text Container */
+        .container {
+            text-align: right;         /* Aligns all text inside to the right */
+        }
+
+        /* Main Name */
+        h1 {
+            color: white;
+            font-weight: bold;
+            font-size: 6rem;           /* Big text size */
+            margin: 0;
+            line-height: 1.1;          /* Keeps 'Mohammad' and 'Abdelhadi' tight */
+        }
+
+        /* Subtitle */
+        .subtitle {
+            color: grey;
+            font-size: 1.5rem;         /* Smaller text size */
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+
+        /* Contacts Section */
+        .contacts {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        /* Hyperlinks */
+        .contacts a {
+            color: #b0b0b0;            /* Light grey so it's readable on black */
+            text-decoration: none;     /* Removes the default underline */
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        /* Hover effect for the links */
+        .contacts a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+        /* Responsive Design for smaller screens */
+        @media (max-width: 768px) {
+            h1 { font-size: 4rem; }
+            body { padding-right: 5vw; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Mohammad<br>Abdelhadi</h1>
+        <div class="subtitle">personal website</div>
+        
+        <div class="contacts">
+            <a href="mailto:sci.show.with.moh@gmail.com">sci.show.with.moh@gmail.com</a>
+            <!-- You can add more contact links (like LinkedIn or GitHub) below -->
+            <!-- <a href="YOUR_LINK_HERE">LinkedIn</a> -->
+        </div>
+    </div>
+
+</body>
+</html>
