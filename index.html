@@ -21,7 +21,10 @@
 
         /* General Body Styling */
         body {
-            background-color: black;
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Normal_School%2C_London_Ontario3.jpg/1280px-Normal_School%2C_London_Ontario3.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
             margin: 0;
             padding: 0;
             height: 100vh;
@@ -35,6 +38,9 @@
         /* Text Container */
         .container {
             text-align: right;         /* Aligns all text inside to the right */
+            background-color: rgba(0, 0, 0, 0.6);  /* Semi-transparent black backdrop */
+            padding: 30px 40px;        /* Add padding around the text */
+            border-radius: 8px;        /* Slightly rounded corners */
         }
 
         /* Main Name */
@@ -79,6 +85,7 @@
         @media (max-width: 768px) {
             h1 { font-size: 4rem; }
             body { padding-right: 5vw; }
+            .container { padding: 20px 30px; }
         }
     </style>
 </head>
